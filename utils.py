@@ -2,6 +2,9 @@ import cv2
 import glob
 import numpy as np
 import scipy.io as sio
+import tensorflow as tf
+from tensorflow import keras
+
 from scipy.stats import skew
 from scipy.stats import kurtosis
 import pywt
@@ -18,8 +21,7 @@ from sklearn.metrics import classification_report, confusion_matrix
 from tensorflow.keras.utils import to_categorical
 from sklearn import metrics
 import matplotlib.pyplot as plt
-import tensorflow as tf
-from tensorflow import keras
+
 import os
 from sklearn.preprocessing import MinMaxScaler
 from keras.callbacks import EarlyStopping
